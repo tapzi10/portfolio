@@ -12,6 +12,20 @@
     .project { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
     footer { text-align: center; padding: 1rem; font-size: 0.9em; color: #555; }
     a { color: #007BFF; text-decoration: none; }
+.skill { margin-bottom: 1rem; }
+.bar {
+  background: #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+.fill {
+  background: #007BFF;
+  height: 100%;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+    
   </style>
 </head>
 <body>
@@ -47,6 +61,22 @@
     <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
     <p>GitHub: <a href="https://github.com/your-username" target="_blank">@your-username</a></p>
   </section>
+
+  <section id="skills">
+  <h2>Skills</h2>
+  <div class="skill">
+    <p>HTML</p>
+    <div class="bar"><div class="fill" style="width: 90%"></div></div>
+  </div>
+  <div class="skill">
+    <p>CSS</p>
+    <div class="bar"><div class="fill" style="width: 80%"></div></div>
+  </div>
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div class="fill" style="width: 70%"></div></div>
+  </div>
+</section>
 
   <footer>
     <p>© 2025 Carl. Built with love and HTML.</p>
